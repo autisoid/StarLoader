@@ -48,6 +48,8 @@ void CallDeinitialiseForEachPlugin() {
 		if (pfnProceudre)
 			pfnProceudre();
 	}
+
+	free(g_rgpPlugins);
 }
 
 const char* GetLastErrorAsHumanReadable(DWORD _ErrorCode) {
